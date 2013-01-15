@@ -63,7 +63,10 @@ module.exports = (robot) ->
     unless robot.name.toLowerCase() is 'hubot'
       emit = emit.replace /hubot/ig, robot.name
 
-    msg.send emit
+    if robot.adapter.constructor.name is "IrcBot"
+      robot.adapter.bot.say msg.message.user.name, emit
+    else
+      msg.send emit
 
   robot.router.get '/hubot/help', (req, res) ->
     cmds = robot.helpCommands().map (cmd) ->

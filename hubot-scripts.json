@@ -1,0 +1,17 @@
+[
+  "redis-brain.coffee"
+  , "tweet.coffee"
+  , "shipit.coffee"
+  , "eval.coffee"
+  , "google.coffee"
+  , "web.coffee"
+  , "insult.coffee"
+  , "lastfm_np.coffee"
+  , "lmgtfy.coffee"
+  , "tweet-content.coffee"
+  , "twitter.coffee"
+  , "whatis.coffee"
+  , "auth.coffee"
+  , "isup.coffee"
+  , "coderwall.coffee"
+]

@@ -68,7 +68,7 @@ module.exports = (robot) ->
     else
       msg.send emit
 
-  robot.router.get '/hubot/help', (req, res) ->
+  robot.router.get "/#{robot.name}/help", (req, res) ->
     cmds = robot.helpCommands().map (cmd) ->
       cmd.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
 
